@@ -4,23 +4,26 @@ Page({
 
   },
   onLoad:function(options){
-    const _this=this;
+    var _this=this;
     wx.request({
       url: 'http://localhost:8080/pea/queryMovie',
       method:'POST',
       data:{
-        movieName:'肖申克'
+        movieName:''
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded' // 默认值
       },
-      success:function(data){
-        console.log(data)
+      success:function(res){
+        console.log(res.data.movieList)
+         _this.setData({
+          post:res.data.movieList
+        })
       }
     })
   },
   
-  onTapToDetail(event){
-  
+  movieDetail(event){
+    console.log("点击电影详情")
   }
 })

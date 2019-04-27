@@ -1,0 +1,7 @@
+<view class="container">
+  <image class="avatar" src="/images/avatar/pea2.jpg"></image>
+  <text class="motto">豌豆影评系统</text>
+  <view catchtap='onTapJump' class="journey-container">
+    <text class="journey">欢迎来到豌豆</text>
+  </view>
+</view>

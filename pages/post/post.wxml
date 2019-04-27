@@ -1,0 +1,22 @@
+<import src="post-item/post-item-tpl.wxml"/>
+<view>
+  <swiper vertical="{{false}}" indicator-dots="true" autoplay='true' interval='5000' circular='true'>
+    <swiper-item>
+      <image src="/images/movies/复仇者联盟4.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/movies/反贪风暴4.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/movies/调音师.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="">
+  <form bindsubmit="uploadImg">
+    <label bindtap="chooseImg">点击选择图片</label>
+    <image src="{{photos}}"></image>
+    <button form-type="submit">提交</button>
+  </form>
+</view>

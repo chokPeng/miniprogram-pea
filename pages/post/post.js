@@ -3,27 +3,34 @@ Page({
   data:{
 
   },
-  onLoad:function(options){
-    var _this=this;
+  onLoad:function(){
+    
+  },
+  onShow(){
+    var _this = this;
     wx.request({
       url: 'http://localhost:8080/pea/queryMovie',
-      method:'POST',
-      data:{
-        movieName:''
+      method: 'POST',
+      data: {
+        movieName: ''
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded' // 默认值
       },
-      success:function(res){
-        console.log(res.data.movieList)
-         _this.setData({
-          post:res.data.movieList
+      success: function (res) {
+        console.log(res)
+        _this.setData({
+          post: res.data.movieList
         })
+        wx.setStorageSync('movieDetail', res.data.movieList)
       }
     })
   },
-  
+  //重定向到post-detail页面,并把点击到的位置的数组下标传过去
   movieDetail(event){
-    console.log("点击电影详情")
+    var movieListIndex=event.currentTarget.dataset.index;
+    wx.redirectTo({
+      url: 'post-detail?movieListIndex=' + movieListIndex,
+    })
   }
 })

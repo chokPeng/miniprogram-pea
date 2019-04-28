@@ -12,12 +12,13 @@
     </swiper-item>
   </swiper>
 </view>
-<block wx:for="{{post}}" wx:for-item="item" wx:for-index="idx" wx:key="">
-  <view class="post_container" style="display:flex;flex-direction:row;">
+<block wx:for="{{post}}" wx:for-item="item" wx:for-index="index" wx:key="">
+  <view class="post_container" bindtap='movieDetail' style="display:flex;flex-direction:row;" data-index="{{index}}">
+  <!--不能绑定数组下标吗?-->
       <view >
       <image src="{{item.image}}" class="post_image"></image>
       </view>
-      <view class="post_right_detais" bindtap='movieDetail'>
+      <view class="post_right_detais" >
         <view class="movieName">
           <text>{{item.movieName}}</text>
         </view>

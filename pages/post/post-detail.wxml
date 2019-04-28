@@ -1,0 +1,6 @@
+<!--pages/post/post-detail.wxml-->
+<view>
+  <text>湖人总冠军!</text>
+  <text>{{postDetail.movieName}}</text>
+</view>
+

@@ -1,14 +1,15 @@
 {
   "pages": [
     "pages/welcome/welcome",
+    "pages/login/login",
     "pages/post/post",
     "pages/userInfo/userInfo",
-    "pages/post/post-detail"
+    "pages/post/post-detail/post-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#E3F3DC",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "豌豆影评",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

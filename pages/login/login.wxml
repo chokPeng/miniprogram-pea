@@ -1,0 +1,9 @@
+<view class="container" catchtap='ontap'>
+  <image class="avatar" src="/images/avatar/pea2.jpg"></image>
+  <text class="motto">豌豆影评系统</text>
+  <form bindsubmit='login'>
+    <input name="userId" placeholder="请输入您的ID"></input>
+    <input type='password' name="userPassword" placeholder="请输入您的密码"></input>
+    <button form-type='submit'>登录</button>
+  </form>
+</view>

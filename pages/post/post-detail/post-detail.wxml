@@ -1,0 +1,28 @@
+<!--pages/post/post-detail.wxml-->
+<!--顶部-->
+<view class="top" style="display:flex;flex-direction:row;">
+  <view >
+    <image src="{{postDetail.image}}" class="top.left"></image>
+  </view>
+  <view class='top.right' >
+    <view class='top.right.movieName'>
+      <text>{{postDetail.movieName}}</text>
+    </view>
+    <view>
+      电影评分:{{postDetail.averageScore}}
+    </view>
+    <view>
+      评分人数:{{postDetail.scoreNumber}}
+    </view>
+    <view >
+      {{postDetail.actor}}
+    </view>
+    <view >
+      简介:{{postDetail.movieInfo}}
+    </view>
+    <view >
+      {{postDetail.releaseDate}}
+    </view>
+  </view>
+</view>
+<button type="primary" bindtap="chooseImage">上传图片</button>

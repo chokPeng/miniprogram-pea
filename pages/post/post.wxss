@@ -7,7 +7,6 @@ swiper{
     height:600rpx;
   }
 .post_container{
-  background-color:rgba(243, 250, 243, 0.438);
   border-top: 2px solid rgba(245, 241, 244, 0.726);
   border-bottom: 2px solid rgba(245, 241, 244, 0.726);
   border-left: 4px solid rgba(245, 241, 244, 0.726);

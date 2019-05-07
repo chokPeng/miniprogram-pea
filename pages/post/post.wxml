@@ -14,7 +14,6 @@
 </view>
 <block wx:for="{{post}}" wx:for-item="item" wx:for-index="index" wx:key="">
   <view class="post_container" bindtap='movieDetail' style="display:flex;flex-direction:row;" data-index="{{index}}">
-  <!--不能绑定数组下标吗?-->
       <view >
       <image src="{{item.image}}" class="post_image"></image>
       </view>

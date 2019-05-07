@@ -1,0 +1,16 @@
+/* pages/post/post-detail.wxss */
+.top{
+  width: 100%;
+  background-color: rgba(245, 241, 244, 0.726);
+}
+.top.left{
+  width:100px;
+  font: bold;
+}
+.top.right{
+  font-size: 15px;
+}
+.top.right.movieName{
+  color: black;
+  font-size: 25px;
+}

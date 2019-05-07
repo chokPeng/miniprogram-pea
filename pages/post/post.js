@@ -29,8 +29,8 @@ Page({
   //重定向到post-detail页面,并把点击到的位置的数组下标传过去
   movieDetail(event){
     var movieListIndex=event.currentTarget.dataset.index;
-    wx.redirectTo({
-      url: 'post-detail?movieListIndex=' + movieListIndex,
+    wx.navigateTo({
+      url: 'post-detail/post-detail?movieListIndex=' + movieListIndex,
     })
   }
 })

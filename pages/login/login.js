@@ -16,16 +16,19 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' // 默认值
       },
       success: function (res) {
-        console.log(res)
-        if(res.data.msg=="登录失败"){
-          console.log("登录失败")
-        }else{
-          console.log(res.data.msg)
+        if(res.data.msg=="登录失败"){     //登录失败
+          wx.showToast({
+            title: '登录失败啊',
+            icon: 'none',
+            duration: 1000
+          })
+        }else{          //登录成功
+        //将用户信息存入缓存
+          wx.setStorageSync('userInfo', res.data.user)
           wx.switchTab({
             url: '../post/post'
           });  
         }
-       
       }
     })
   }

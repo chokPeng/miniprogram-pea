@@ -25,4 +25,15 @@
     </view>
   </view>
 </view>
-<button type="primary" bindtap="chooseImage">上传图片</button>
+<!-- <button type="primary" bindtap="chooseImage">上传图片</button> -->
+<!-- 展示电影评论-->
+ <block wx:for="{{AllComments}}" wx:for-item="item" wx:for-index="index" wx:key="">
+  <view>
+  
+    <view>
+        <image src="{{item.userAvatar}}" class="userAvatar"></image>
+        <text>{{item.userName}}</text>
+    </view>
+    <text>{{item.commentContent}}</text>
+  </view>
+</block>

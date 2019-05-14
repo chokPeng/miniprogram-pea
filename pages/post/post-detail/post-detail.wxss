@@ -14,8 +14,15 @@
   color: black;
   font-size: 25px;
 }
+.comment{
+  border-top:1px solid black;
+}
 .userAvatar{
   width: 50rpx;
   height: 50rpx;
   border-radius:50%;    /*将方形图片成圆形图片布局*/
+}
+.postCommentButton{
+  line-height: 50rpx;
+  width: 130rpx;
 }

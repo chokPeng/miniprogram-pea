@@ -1,1 +1,23 @@
 /* pages/userInfo/userInfo.wxss */
+.submitButton{
+  line-height: 50rpx;
+  width: 130rpx;
+}
+.uploadImage{
+  line-height: 50rpx;
+  width: 130rpx;
+  color: rgba(167, 65, 34, 0.897);
+}
+ .tips{
+  font-size: 20rpx;
+  font-style: italic;
+} 
+.form{
+  justify-content: center;
+  flex-direction: row;
+}
+.avatar{
+ display:flex;
+ flex-direction:column;
+ align-items: center;
+}

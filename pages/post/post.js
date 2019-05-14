@@ -18,7 +18,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' // 默认值
       },
       success: function (res) {
-        console.log(res)
+        //console.log(res)
         _this.setData({
           post: res.data.movieList
         })
@@ -26,7 +26,7 @@ Page({
       }
     })
   },
-  //重定向到post-detail页面,并把点击到的位置的数组下标传过去
+  //导航到post-detail页面,并把点击到的位置的数组下标传过去
   movieDetail(event){
     var movieListIndex=event.currentTarget.dataset.index;
     wx.navigateTo({

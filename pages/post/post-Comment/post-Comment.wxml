@@ -1,0 +1,14 @@
+<view class="container"> 
+  <view>{{date}}</view>
+  <view class="box" >
+    <text class="vote-star"></text>
+    <text class="star-after">
+      <text class="ll" style="width:{{score}}%"></text>
+    </text>
+    <input name="score" bindblur='score' placeholder='在此打分，100分制'></input>
+  </view>
+  <form bindsubmit='postComment' class="form">
+    <textarea maxlength='255' bindblur='textarea'  name="textarea" placeholder='在此评论，限制255字'></textarea>
+    <button class="submitButton" form-type='submit'>评论</button>
+  </form>
+</view>

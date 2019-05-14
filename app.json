@@ -4,7 +4,9 @@
     "pages/login/login",
     "pages/post/post",
     "pages/userInfo/userInfo",
-    "pages/post/post-detail/post-detail"
+    "pages/post/post-detail/post-detail",
+    "pages/post/post-Comment/post-Comment",
+    "pages/userRegister/userRegister"
   ],
   "window": {
     "backgroundTextStyle": "light",

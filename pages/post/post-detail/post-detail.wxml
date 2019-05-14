@@ -23,15 +23,14 @@
     <view >
       {{postDetail.releaseDate}}
     </view>
+    <button bindtap='jumpToPostComment' class="postCommentButton">评论</button>
   </view>
 </view>
-<!-- <button type="primary" bindtap="chooseImage">上传图片</button> -->
 <!-- 展示电影评论-->
  <block wx:for="{{AllComments}}" wx:for-item="item" wx:for-index="index" wx:key="">
-  <view>
-  
+  <view class='comment'>
     <view>
-        <image src="{{item.userAvatar}}" class="userAvatar"></image>
+        <image src='item.userAvatar' class="userAvatar"></image>
         <text>{{item.userName}}</text>
     </view>
     <text>{{item.commentContent}}</text>

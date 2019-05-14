@@ -1,0 +1,38 @@
+.box{
+  display: flex;
+  flex-direction: column;
+}
+.vote-star{
+  display:inline-block;/*内联元素转换成块元素，并不换行*/
+  margin-right:6px;
+  width:150px;/*5个星星的宽度*/
+  height:15px;/*1个星星的高度*/
+  overflow:hidden;
+  vertical-align:middle;
+  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAIAAAC0tAIdAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFnRFWHRDcmVhdGlvbiBUaW1lADA0LzIzLzE165b6MwAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAD/SURBVCiRjZK7ioUwEIYzySIH8VJpoZU21r7/o2ghXrBRjBBFIZmcIkv2oLK7fzWZfMzlZ4h+Euf8MU/Jk7quE0Lc8w/0vu/btk3T9C/acPM8I+IftNba0FJKzvnlF9q2PY7DPBBRSmkndhzH8zxCCKWUUoqIgIjjOPZ9r7W+T2XleV6apmAgIURd1+d53jkASJIkTVMAAFtSKVVV1bqunyhjrCgK3/evWzLGGGOXwojouu6DJ4hoTaCUWos+nfmhOefG4DiOy7LM89y0WpbFMl82Wpbl9XplWRYEASEkiqIwDJumMTcDAN+9tNaIOAyDUup+SdM0CSFMDL/bfNEbDNPYPM3MU7AAAAAASUVORK5CYII=") repeat-x;
+}
+.ll{
+  display:inline-block;/*内联元素转换成块元素，并不换行*/
+  height:15px;/*1个星星的高度*/
+  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAIAAAC0tAIdAAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFnRFWHRDcmVhdGlvbiBUaW1lADA0LzIzLzE165b6MwAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAEfSURBVCiRjZI7SwNREIW/3YRFRYwIipWlYCMYECutrays1Nr/EEFtLfwJgoIKKYU0gahYxhdC7BJFJdEigaBGVnb3Zscim2weF8ypzpz5GOZeBtGqlNHGJlrdbFHO9sY6uvpI5Zb8cX90/gjgOUnd+Y/2PQonAE6Vt1RX05DrBN9PQeXVcD7DjYenGJ/HMIkMEB1E2YbUXXL73O3gK81WLU0sEN82RASgnOVijdqLhjMizCWI72JGmzTgfpFZ5f28A7ViLKeYXOx5pRXDGukerH4Zm21VbbSyKaYDHx0KjO+GYQddTKNsMJjZZL3E0gHWKMDrWciER3C5Iclp+bgKk5+SpFfkMCZ1pxE0aV/Jw554tuaUCqdSuW/Ytj/pQ3+BD86sxszTMgAAAABJRU5ErkJggg==") repeat-x 00;
+}
+  .vote-number{
+  vertical-align:middle;
+  font-family:微软雅黑,Verdana,Geneva, sans-serif;
+  font-size:12px;
+}
+.star-after{
+  position: relative;
+  width: 150px;
+  top: -15px;   /*向上顶15px高度*/
+  line-height: 15px;  /*因为<text>标签有默认的高度，所以要修改<text>标签的高度*/
+}
+.container{
+ display:flex;
+ flex-direction:column;
+ align-items: center;
+}
+.submitButton{
+  width: 130rpx;
+  height: 80rpx;
+}

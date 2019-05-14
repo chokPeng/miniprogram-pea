@@ -1,0 +1,6 @@
+<form bindsubmit='userRegister' class="form">
+  <input name="userId" placeholder='用户Id(不可修改)'></input>
+  <input name="userName" placeholder='用户名'></input>
+  <input type='password' name="userPassword" placeholder='密码'></input>
+  <button class="submitButton" form-type='submit'>修改</button>
+</form>

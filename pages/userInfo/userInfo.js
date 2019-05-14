@@ -15,6 +15,11 @@ Page({
     console.log('userId',this.data.userId)
     this.data.userName=user.userName;       //设置userName为缓存里的值
     this.setData({
+      userPassword:user.userPassword,
+      userInfo:user.userInfo,
+      userSex:user.userSex,
+      userAddress:user.userAddress,
+      userName:user.userName,
       userAvatar: user.userAvatar+"?q="+Math.random()*999
     })
   },
@@ -27,9 +32,9 @@ Page({
         userId:this.data.userId,
         userName: event.detail.value.userName,
         userPassword: event.detail.value.userPassword,
+        userSex:event.detail.value.userSex,
         userInfo: event.detail.value.userInfo,
-        userAddress: event.detail.value.userAddress,
-        userSex: event.detail.value.redio
+        userAddress: event.detail.value.userAddress
       },
       header: {
         'content-type': 'application/x-www-form-urlencoded' // 默认值

@@ -5,7 +5,7 @@
 .vote-star{
   display:inline-block;/*内联元素转换成块元素，并不换行*/
   margin-right:6px;
-  width:150px;/*5个星星的宽度*/
+  width:75px;/*5个星星的宽度*/
   height:15px;/*1个星星的高度*/
   overflow:hidden;
   vertical-align:middle;
@@ -23,7 +23,7 @@
 }
 .star-after{
   position: relative;
-  width: 150px;
+  width: 75px; 
   top: -15px;   /*向上顶15px高度*/
   line-height: 15px;  /*因为<text>标签有默认的高度，所以要修改<text>标签的高度*/
 }

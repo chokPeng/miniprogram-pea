@@ -32,8 +32,8 @@ Page({
             duration: 1000
           })
           wx.setStorageSync('userInfo', res.data.user)
-          wx.redirectTo({
-            url: '../login/login',
+          wx.navigateBack({
+            
           })
         } else {          //注册失败
           wx.showToast({

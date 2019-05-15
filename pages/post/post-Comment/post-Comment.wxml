@@ -9,6 +9,6 @@
   </view>
   <form bindsubmit='postComment' class="form">
     <textarea maxlength='255' bindblur='textarea'  name="textarea" placeholder='在此评论，限制255字'></textarea>
-    <button class="submitButton" form-type='submit'>评论</button>
+    <button class="submitButton" form-type='submit'>修改</button>
   </form>
 </view>

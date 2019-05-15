@@ -28,7 +28,7 @@
           <text class="movieActor">主演：{{item.actor}}</text>
         </view>
         <view>
-          <text class="ScoreNumber">评论人数：{{item.scoreNumber}}</text>
+          <text class="ScoreNumber">评论数：{{item.scoreNumber}}</text>
         </view>
       </view>
   </view>

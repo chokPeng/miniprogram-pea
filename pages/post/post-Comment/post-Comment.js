@@ -48,6 +48,9 @@ Page({
             icon: 'success',
             duration: 1000
           })
+          wx.navigateBack({
+            
+          })
         }else{
           wx.showToast({
             title: '评论失败啊',

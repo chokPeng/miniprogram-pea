@@ -1,0 +1,15 @@
+<view class="avatar">
+  <image src='{{userAvatar}}' class="userAvatar" bindtap="chooseImage"></image>
+  <text class="tips">点击图片修改头像</text>
+</view>
+<form bindsubmit='updateUserInfo' class="form">
+  <input name="userName" value="{{userName}}"placeholder='用户名'></input>
+  <input type='password' value="{{userPassword}}"name="userPassword" placeholder='密码'></input>
+  <radio-group name='userSex' value="{{userSex}}">
+    <radio value="男" checked='{{userSex=="男"?true:false}}'>男</radio>
+    <radio value="女" checked='{{userSex=="女"?true:false}}'>女</radio>
+  </radio-group>
+  <input name="userInfo" value="{{userInfo}}"placeholder='简介'></input>
+  <input name="userAddress" value="{{userAddress}}" placeholder='坐标'></input>
+  <button class="submitButton" form-type='submit'>修改</button>
+</form>

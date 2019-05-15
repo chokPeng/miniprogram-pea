@@ -26,6 +26,7 @@ Page({
         'content-type': 'application/x-www-form-urlencoded' // 默认值
       },
       success: function (res) {
+        console.log(res.data.comment)
         _this.setData({
           AllComments: res.data.comment
         })

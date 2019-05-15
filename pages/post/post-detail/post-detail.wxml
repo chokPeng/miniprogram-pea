@@ -1,10 +1,10 @@
 <!--pages/post/post-detail.wxml-->
 <!--顶部-->
 <view class="top" style="display:flex;flex-direction:row;">
-  <view >
+  <view>
     <image src="{{postDetail.image}}" class="top.left"></image>
   </view>
-  <view class='top.right' >
+  <view class='top.right'>
     <view class='top.right.movieName'>
       <text>{{postDetail.movieName}}</text>
     </view>
@@ -14,24 +14,33 @@
     <view>
       评分人数:{{postDetail.scoreNumber}}
     </view>
-    <view >
+    <view>
       {{postDetail.actor}}
     </view>
-    <view >
+    <view>
       简介:{{postDetail.movieInfo}}
     </view>
-    <view >
+    <view>
       {{postDetail.releaseDate}}
     </view>
     <button bindtap='jumpToPostComment' class="postCommentButton">评论</button>
   </view>
 </view>
 <!-- 展示电影评论-->
- <block wx:for="{{AllComments}}" wx:for-item="item" wx:for-index="index" wx:key="">
+<block wx:for="{{AllComments}}" wx:for-item="item" wx:for-index="index" wx:key="">
   <view class='comment'>
-    <view>
-        <image src='item.userAvatar' class="userAvatar"></image>
-        <text>{{item.userName}}</text>
+    <view class='comment-head'>
+      <image src="{{item.userAvatar}}" class="userAvatar"></image>
+      <view class='name-block'>
+        <view>{{item.userName}}</view>
+        <view class="box">
+          <text class="vote-star"></text>
+          <text class="star-after">
+                  <text class="ll" style="width:{{item.score}}%"></text>
+          </text>
+        </view>
+      </view>
+
     </view>
     <text>{{item.commentContent}}</text>
   </view>

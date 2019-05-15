@@ -6,7 +6,8 @@
     "pages/userInfo/userInfo",
     "pages/post/post-detail/post-detail",
     "pages/post/post-Comment/post-Comment",
-    "pages/userRegister/userRegister"
+    "pages/userRegister/userRegister",
+    "pages/updateUserInfo/updateUserInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",
